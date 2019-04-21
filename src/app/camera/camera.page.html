@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Камера</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button class="camera-btn" expand="block" color="medium" (click)="onCamera()">
+    <ion-icon name="camera"></ion-icon>
+  </ion-button>
+
+  <img *ngIf="picture" class="camera-image" [src]="picture" alt="фото" />
+</ion-content>

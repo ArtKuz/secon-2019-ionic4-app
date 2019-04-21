@@ -1,0 +1,13 @@
+.menu {
+  .list-ios {
+    margin-top: 20px;
+  }
+
+  ion-item {
+    --border-style: none;
+  }
+
+  .active-item-side-menu {
+    --background: #e7e7e7;
+  }
+}

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Спикеры</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let speaker of speakers; let i = index" [routerLink]="['/speaker', i]">
+      <ion-avatar
+        slot="start"
+      >
+        <img *ngIf="speaker.avatar" [src]="speaker.avatar" [alt]="speaker.name">
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p class="speakers-list__speaker-name">
+          {{speaker.name}}
+        </p>
+        <p class="speakers-list__speaker-title">
+          {{speaker.title}}
+        </p>
+        <p class="speakers-list__speaker-company">
+          {{speaker.company}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

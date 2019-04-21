@@ -1,0 +1,22 @@
+.speakers-list {
+  &__speaker-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__speaker-title {
+    font-size: 14px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+  }
+
+  &__speaker-company {
+    font-size: 12px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+  }
+}

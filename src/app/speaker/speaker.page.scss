@@ -1,0 +1,32 @@
+.speaker-page {
+  &-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  &-title {
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-theses-title {
+    font-size: 18px;
+    margin: 10px 10px 5px;
+  }
+
+  &-theses {
+    padding: 0 10px 20px;
+    margin: 0;
+    font-size: 16px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

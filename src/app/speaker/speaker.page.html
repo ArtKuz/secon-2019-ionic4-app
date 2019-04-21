@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{speaker.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="speaker-page">
+  <div>
+    <img *ngIf="speaker.avatar" class="speaker-page-avatar" [src]="speaker.avatar" [alt]="speaker.name" width="20%">
+  </div>
+
+
+  <h1 class="speaker-page-title">{{speaker.title}}</h1>
+
+  <h3 class="speaker-page-theses-title">Тезисы:</h3>
+  <p class="speaker-page-theses">
+    {{speaker.description}}
+  </p>
+</ion-content>
